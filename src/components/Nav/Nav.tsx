@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+
 import "./css/index.css"
 import Switch from "../../assets/images/switch.svg"
 import Fadown from "../../assets/images/lightDropdown.svg"

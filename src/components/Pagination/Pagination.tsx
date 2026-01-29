@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Faleft from "../../assets/images/back2User.svg"
 import Potrait from "../../assets/images/singleUser.svg"
 import f_star from "../../assets/images/fullStar.svg"

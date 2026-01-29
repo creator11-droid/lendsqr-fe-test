@@ -1,6 +1,5 @@
 import logo from "../../assets/images/logo.svg"
 import hero from "../../assets/images/signIn.svg"
-import lendsqr from "../../assets/images/lendsqr.svg"
 import "./css/Signin.css"
 import { Link } from "react-router"
 const Signin = () => {

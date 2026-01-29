@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import logo from "../../assets/images/logo.svg"
 import logo2 from "../../assets/images/union.svg"
 import Fasearch from "../../assets/images/searchBar.svg"

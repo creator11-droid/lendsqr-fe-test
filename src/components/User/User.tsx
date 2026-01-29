@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import users from "../../assets/images/users2.svg"
 import activeUsers from "../../assets/images/active-users.svg"
 import loanUsers from "../../assets/images/loanUsers.svg"
