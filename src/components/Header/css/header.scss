@@ -1,0 +1,197 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem;
+  
+
+    .header_logo{
+        width: 9.05rem;
+        height:1.875rem;
+      
+    
+    }
+    .header_logo2{
+        display:none;
+    }
+    .header_input{
+        display: flex;
+        width: 25rem;
+        border: 0.063rem solid #213F7D;
+        border-radius: 0.5rem;
+        height:2.5rem;
+        overflow: hidden;
+        input{
+            border:none;
+            width:100%;
+            font-size: 0.875rem;
+            font-weight: 400;
+            line-height: 1;
+            padding-left: 1.25rem;
+        }
+            .search{
+                width:3.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor:pointer;
+            background: #39cdcc;
+            
+        }
+    }
+    .header_profile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:1.875rem;
+        position: relative;
+      
+        :first-child{
+            h1{
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1;
+                text-decoration: underline;
+            }
+            display: flex;
+            gap:2.94rem;
+            figure{
+              transform: translateY(-0.5rem);
+                height:1.625rem;
+                width: 1.625rem;
+            }
+        }
+        :last-child{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.625rem;
+            .dp{
+                height: 3rem;
+                width: 3rem;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+            h3{
+                font-weight: 500;
+                font-size: 1rem;
+                line-height: 1;
+                color:#213F7D;
+            }
+           .ls_profile{
+            display: flex;
+            gap:0.25rem;
+           }
+        }
+    }
+    .header_profile2{
+        display:none;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .header{
+        .header_logo{
+        display: none;
+    }
+    .header_logo2{
+        display: block;
+       
+    }
+     .children{
+       
+.Nav{
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+    padding-left: 0.875rem;
+    color: #213F7D;
+
+overflow-y: auto;
+width: 15rem;
+    .Nav_t{
+        display: flex;
+        flex-direction: column;
+     
+    
+    .single{
+        display: flex;
+        gap: 0.25rem;
+        .s_body{
+            display: flex;
+            gap:0.23rem;
+        }
+    }
+    }
+    a.active{
+        background: #39CDCC;
+    }
+    .template{
+        display: flex;
+        gap:0.625rem;
+        text-decoration: none;
+        color: #213F7D;
+        cursor: pointer;
+        figure{
+            height: 1rem;
+            width: 1rem;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+     p{
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1;
+        font-weight: 400;
+     }
+    }
+    .nav_box{
+        display: flex;
+        flex-direction: column;
+        gap:0.625rem;
+        .topic{
+            color:#545F7D;
+            font-weight: 500;
+            font-size: 0.75rem;
+            line-height: 1;
+        }
+    }
+}
+        }
+    .header_input{
+        width: 14rem;
+    }
+    .header_profile{
+        display: none;
+      
+        :last-child{
+            display: none;
+        }
+    } 
+    .header_profile2{
+        display:block;
+        .dp{
+            height: 3rem;
+                width: 3rem;
+                border-radius: 50%;
+                overflow: hidden;
+        }
+        .children{
+            right: 0;
+            ul{
+               li{
+                list-style: none;
+                padding: 0.25rem;
+                border-bottom: 0.063 solid #213F7D;
+                cursor:pointer;
+                
+            }  
+            }
+           
+        }
+                
+    }
+    }
+   
+}

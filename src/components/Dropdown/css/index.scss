@@ -1,0 +1,13 @@
+.dropdown{
+    position: relative;
+    display: inline-block;
+    .children{
+        position:absolute;
+        margin-top: 0.25rem;
+        background: #fff;
+         padding: 1.875rem 1.25rem;
+         box-shadow: 0.1875rem 0.3125rem 1.25rem 0rem #0000000A;
+
+
+    }
+}

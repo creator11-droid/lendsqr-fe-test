@@ -1,0 +1,138 @@
+.Si_wrapper {
+  height: 100%;
+  display: flex;
+}
+
+.ls_wrapper {
+  flex: 1;
+  height: 100%;
+  padding: 6.625rem 0 18.063rem 4.88rem;
+}
+.ls_wrapper .logo {
+  display: flex;
+  width: 10.848rem;
+}
+.ls_wrapper .hero {
+  padding-top: 8.688rem;
+  width: 37.5rem;
+  height: 31.126rem;
+  margin-left: -1.87rem;
+}
+
+.rs_wrapper {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rs_wrapper .ld_wrapper {
+  padding-bottom: 3.75rem;
+  width: 27.938rem;
+}
+.rs_wrapper .ld_wrapper .leader {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.625rem;
+}
+.rs_wrapper .ld_wrapper .leader h1 {
+  font-weight: 700;
+  color: #213F7D;
+  font-size: 2.5rem;
+  line-height: 1;
+}
+.rs_wrapper .ld_wrapper .leader p {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1;
+  color: #545F7D;
+}
+.rs_wrapper .sign_in_form {
+  width: 27.938rem;
+}
+.rs_wrapper .sign_in_form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.rs_wrapper .sign_in_form form input {
+  width: 100%;
+  border-radius: 0.313rem;
+  height: 3.125rem;
+  border: 0.0063rem solid rgba(84, 95, 125, 0.15);
+}
+.rs_wrapper .sign_in_form form :nth-child(2) {
+  display: flex;
+  height: 3.125rem;
+  border: 0.0063rem solid rgba(84, 95, 125, 0.15);
+  position: relative;
+  border-radius: 0.313rem;
+}
+.rs_wrapper .sign_in_form form :nth-child(2) input {
+  border: none;
+  height: 3rem;
+}
+.rs_wrapper .sign_in_form form :nth-child(2) p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #39CDCC;
+  border: none;
+  font-size: 0.75rem;
+  line-height: 1;
+  width: 3.1131rem;
+  cursor: pointer;
+}
+.rs_wrapper .sign_in_form form .sign_in_btn {
+  width: 100%;
+  height: 3rem;
+  color: #fff;
+  background: #39CDCC;
+  border-radius: 0.313rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rs_wrapper .sign_in_form form span {
+  font-size: 0.75rem;
+  line-height: 1;
+  color: #39CDCC;
+}
+
+@media screen and (max-width: 768px) {
+  .Si_wrapper .ls_wrapper {
+    display: none;
+  }
+  .Si_wrapper .rs_wrapper {
+    width: 100%;
+  }
+  .Si_wrapper .rs_wrapper .sign_in_form {
+    width: 100%;
+  }
+  .Si_wrapper .ld_wrapper {
+    width: 100%;
+  }
+  .Si_wrapper .ld_wrapper .leader {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .Si_wrapper .ld_wrapper .lead_logo {
+    display: block;
+    align-self: center;
+    position: absolute;
+    top: 4rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .lead_logo {
+    display: none;
+  }
+}/*# sourceMappingURL=Signin.css.map */

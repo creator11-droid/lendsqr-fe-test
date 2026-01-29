@@ -1,0 +1,55 @@
+.Nav{
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+    padding-left: 1.875rem;
+    color: #213F7D;
+    .Nav_t{
+        display: flex;
+        flex-direction: column;
+        gap:3.25rem;
+    
+    .single{
+        display: flex;
+        gap: 0.625rem;
+        .s_body{
+            display: flex;
+            gap:0.563rem;
+        }
+    }
+    }
+    a.active{
+        background: #39CDCC;
+    }
+    .template{
+        display: flex;
+        gap:0.625rem;
+        text-decoration: none;
+        color: #213F7D;
+        cursor: pointer;
+        figure{
+            height: 1rem;
+            width: 1rem;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+     p{
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1;
+        font-weight: 400;
+     }
+    }
+    .nav_box{
+        display: flex;
+        flex-direction: column;
+        gap:0.625rem;
+        .topic{
+            color:#545F7D;
+            font-weight: 500;
+            font-size: 0.75rem;
+            line-height: 1;
+        }
+    }
+}

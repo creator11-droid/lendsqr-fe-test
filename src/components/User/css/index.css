@@ -1,0 +1,249 @@
+.users {
+  display: flex;
+  flex-direction: column;
+}
+.users .users_head {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: #213F7D;
+}
+.users .users_box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.625rem;
+  padding: 2.5rem 0;
+}
+.users .users_box .box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  height: 10rem;
+  background: #fff;
+  border-radius: 0.25rem;
+  padding: 1.25rem 0 1.875rem 1.875rem;
+}
+.users .users_box .box figure {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.users .users_box .box p {
+  font-weight: 500;
+  font-size: 0.875;
+  line-height: 1;
+  color: #545F7D;
+}
+.users .users_box .box h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: #213F7D;
+}
+.users .users_box :first-child figure {
+  background: #e9a6f3;
+}
+.users .users_box :nth-child(2) figure {
+  background: #b69ef7;
+}
+.users .users_box :nth-child(3) figure {
+  background: #ee9d8e;
+}
+.users .users_box :nth-child(4) figure {
+  background: #f7aabd;
+}
+.users .pagination {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.users .pagination table {
+  width: 100%;
+  background: #fff;
+  border-collapse: collapse;
+}
+.users .pagination table th {
+  padding-bottom: 2.25rem;
+}
+.users .pagination table th .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+}
+.users .pagination table th .wrapper .children {
+  border-radius: 0.25rem;
+  height: 37.5rem;
+}
+.users .pagination table th .wrapper .line_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.users .pagination table th .wrapper .line_wrapper .line {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+.users .pagination table th .wrapper .line_wrapper .line p {
+  align-self: self-start;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1;
+}
+.users .pagination table th .wrapper .line_wrapper input, .users .pagination table th .wrapper .line_wrapper select {
+  width: 15rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1;
+  padding: 0.75rem 1.25rem;
+  border: 0.063rem solid #213F7D;
+}
+.users .pagination table th .wrapper .btn_wrapper {
+  display: flex;
+  gap: 0.875rem;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2.5rem;
+}
+.users .pagination table th .wrapper .btn_wrapper button {
+  width: 6.25rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1;
+}
+.users .pagination table th .wrapper .btn_wrapper :first-child {
+  background: #fff;
+  border: 0.063rem solid #545F7D;
+  color: #545F7D;
+}
+.users .pagination table th .wrapper .btn_wrapper :last-child {
+  background: #39CDCC;
+  color: #fff;
+}
+.users .pagination table th .wrapper p {
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1;
+  color: #545F7D;
+}
+.users .pagination table th button {
+  border: none;
+  cursor: pointer;
+  background: #fff;
+}
+.users .pagination table td {
+  text-align: center;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1;
+  color: #545F7D;
+  padding: 0.5rem;
+  border-bottom: 0.063rem solid rgba(33, 63, 125, 0.1019607843);
+}
+.users .pagination table .actions .children {
+  width: 11.25rem;
+  right: 0;
+  overflow: hidden;
+  padding: 1.25rem;
+  border-radius: 0.25rem;
+}
+.users .pagination table .actions .children .actions_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.users .pagination table .actions .children .actions_wrapper .hold {
+  width: 7.375rem;
+  display: flex;
+  gap: 0.625rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.users .pagination table .ld {
+  display: grid;
+  place-items: center;
+}
+.users .pagination table p {
+  display: grid;
+  place-items: center;
+}
+.users .pagination table .success {
+  color: #39CD62;
+  background: #d2f0db;
+  border-radius: 1.25rem;
+  width: 4.375rem;
+  height: 1.875rem;
+  text-align: center;
+}
+.users .pagination table .neutral {
+  color: #545F7D;
+  background: #808183;
+  border-radius: 1.25rem;
+  width: 5rem;
+  height: 1.875rem;
+  text-align: center;
+}
+.users .pagination table .pending {
+  color: #E9B200;
+  background: #eff0d2;
+  border-radius: 1.25rem;
+  width: 5.625rem;
+  height: 1.875rem;
+  text-align: center;
+}
+.users .pagination table .failure {
+  color: #E4033B;
+  background: #f0d6d2;
+  border-radius: 1.25rem;
+  width: 6.25rem;
+  height: 1.875rem;
+  text-align: center;
+}
+.users .pagination .pagination_ {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.users .pagination .pagination_ :first-child {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1;
+  color: #545F7D;
+}
+.users .pagination .pagination_ :last-child button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1;
+  color: #545F7D;
+  padding: 0.25rem;
+}
+.users .pagination .pagination_ :last-child .p_btn {
+  border: 0.063rem solid grey;
+  background: grey;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .del {
+    display: none;
+  }
+  .pagination_ {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}/*# sourceMappingURL=index.css.map */

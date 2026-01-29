@@ -1,0 +1,36 @@
+.home{
+ display: flex;
+ flex-direction: column;
+ height: 100vh;
+ overflow: hidden;
+    .home_wrapper{
+        display:flex;
+        flex:1;
+        min-height: 0;
+        .ls_home{
+            width:17.69rem;
+            padding-top:1.81rem;
+        }
+        .rs_home{
+            flex:1;
+            padding: 3.75rem;
+            background: rgb(233, 232, 232);
+            min-height: 0;
+            overflow-y: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .home{
+        .home_wrapper{
+             .ls_home{
+    display: none;
+    }
+    .rs_home{
+        padding: 1.25rem;
+    } 
+        }
+    }
+  
+}

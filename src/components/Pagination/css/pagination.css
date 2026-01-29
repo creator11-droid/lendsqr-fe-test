@@ -1,0 +1,212 @@
+.pagin {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  overflow-y: auto;
+  width: 100%;
+  gap: 1.875rem;
+}
+.pagin .top {
+  display: flex;
+  flex-direction: column;
+}
+.pagin .top .lead {
+  display: flex;
+  gap: 0.8125rem;
+}
+.pagin .top .info {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.pagin .top .info .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pagin .top .info .head h2 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: #213F7D;
+}
+.pagin .top .info .head .button_wrapper {
+  display: flex;
+  gap: 1.25rem;
+}
+.pagin .top .info .head .button_wrapper button {
+  width: 10.625rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1;
+}
+.pagin .top .info .head .button_wrapper :first-child {
+  border: 0.063rem solid #E4033B;
+  color: #E4033B;
+  background: #e4c1ca;
+}
+.pagin .top .info .head .button_wrapper :last-child {
+  border: 0.063rem solid #39CDCC;
+  color: #39CDCC;
+  background: #b4cccc;
+}
+.pagin .top .info .user_card {
+  display: flex;
+  flex-direction: column;
+  gap: 3.1875rem;
+  background: #fff;
+  border-radius: 0.25rem;
+  padding: 0 2.5rem;
+}
+.pagin .top .info .user_card .card_info .tier_info {
+  display: flex;
+  padding-top: 1.875rem;
+  gap: 1.25rem;
+}
+.pagin .top .info .user_card .card_info .tier_info .potrait {
+  width: 6.25rem;
+  height: 6.25rem;
+  border-radius: 50%;
+  background: #626b7e;
+  display: grid;
+  place-items: center;
+}
+.pagin .top .info .user_card .card_info .tier_info .potrait_info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: start;
+  justify-content: center;
+  padding-right: 1.875rem;
+  border-right: 0.063rem solid grey;
+}
+.pagin .top .info .user_card .card_info .tier_info .potrait_info :first-child {
+  font-size: 1.325rem;
+  font-weight: 500;
+  line-height: 1;
+  color: #213F7D;
+}
+.pagin .top .info .user_card .card_info .tier_info .potrait_info :last-child {
+  color: #545F7D;
+  font-weight: 400;
+  line-height: 1;
+  font-size: 0.875rem;
+}
+.pagin .top .info .user_card .card_info .tier_info .user_tier {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1;
+  color: #545F7D;
+  align-items: center;
+  justify-content: center;
+  padding-right: 1.875rem;
+  border-right: 0.063rem solid grey;
+}
+.pagin .top .info .user_card .card_info .tier_info .user_tier :last-child {
+  display: flex;
+}
+.pagin .top .info .user_card .card_info .tier_info .user_salary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.pagin .top .info .user_card .card_info .tier_info .user_salary h2 {
+  font-weight: 500;
+  line-height: 1;
+  font-size: 1.375rem;
+  color: #213F7D;
+}
+.pagin .top .info .user_card .card_info .tier_info .user_salary p {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1;
+  color: #213F7D;
+}
+.pagin .top .info .user_card .card_nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pagin .top .info .user_card .card_nav ul li {
+  text-decoration: none;
+  list-style: none;
+  font-size: clamp(0.75rem, 2vw, 1.25rem);
+  line-height: 1;
+  font-weight: 400;
+}
+.pagin .top .info .user_card .card_nav ul .active {
+  color: #39CDCC;
+  border-bottom: 0.063rem solid #39CDCC;
+}
+.pagin .bottom {
+  background: #fff;
+  padding: 1.875rem;
+}
+.pagin .bottom .data {
+  width: 100%;
+}
+.pagin .bottom .data h2 {
+  font-weight: 500;
+  line-height: 1;
+  font-size: 1rem;
+  color: #213F7D;
+}
+.pagin .bottom .data .data_ {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(214px, 1fr));
+  row-gap: 1.875rem;
+  padding: 1.875rem;
+  border-bottom: 0.063rem solid #213F7D;
+}
+.pagin .bottom .data .data_ .data__ {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.pagin .bottom .data .data_ .data__ h2 {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1;
+  color: #545F7D;
+}
+.pagin .bottom .data .data_ .data__ p {
+  font-weight: 500;
+  line-height: 1;
+  font-size: 1rem;
+  color: #545F7D;
+}
+.pagin .bottom div:last-of-type .data_ {
+  border-bottom: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .pagin .top .info .head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  .pagin .top .info .head .button_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .pagin .top .info .head .button_wrapper button {
+    width: 6rem;
+  }
+  .pagin .top .info .user_card .card_info .tier_info .potrait_info {
+    border: none;
+  }
+  .pagin .top .info .user_card .card_info .tier_info .del {
+    display: none;
+  }
+  .pagin .top .info .user_card .card_nav ul .del {
+    display: none;
+  }
+}/*# sourceMappingURL=pagination.css.map */

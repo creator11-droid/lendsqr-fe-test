@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "my-font";
+    src: url("/src/assets/fonts/AvenirNextLTPro-Regular.otf") format('opentype');
+}
+
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+html{
+  height:100%;
+}
+body {
+  height: 100dvh;
+  width:100vw;
+  overflow: hidden;
+display: flex;
+font-family: "my-font";
+overflow: hidden;
+}
+#root{
+    flex:1;
+}
+img{
+  max-width:100%;
+  height:auto;
+}
+input:focus,
+input:active {
+  outline: none;
+  box-shadow: none;
+}
+.Wrapper{
+    height: 100%;
+  width: 100%;
+}
